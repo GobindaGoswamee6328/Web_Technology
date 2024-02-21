@@ -115,6 +115,9 @@ else
     $shipError = "choose this";
 }
 
+echo $_FILES["certificate"]["name"];
+move_uploaded_file($_FILES["certificate"]["tmp_name"],"../photo/".$_REQUEST["email"].".jpg") ;
+
 
 if(!empty($_REQUEST["term"]))
 {

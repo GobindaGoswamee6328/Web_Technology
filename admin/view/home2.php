@@ -7,7 +7,7 @@ include '../controller/process2.php'
 <html>
     <body>
     <h1> Create a HTML Form like following</h1>
-        <form action = "" method = "POST">
+        <form action = "" method = "POST" enctype="multipart/form-data">
             <fieldset>
                 <legend>Order Information : </legend>
                 <table>
@@ -108,6 +108,11 @@ include '../controller/process2.php'
                     <td><input type="checkbox" name="ship">
                     <label>Gift Wrapping(additional charges may apply)</label>
                     <?php echo $shipError; ?></td>
+                    </tr>
+
+                    <tr>
+                    <td><label> Certificate: </label></td>
+                    <td><input type="file" name="certificate"></td>
                     </tr>
 
 
